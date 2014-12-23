@@ -1,0 +1,33 @@
+﻿<div class="container">
+    <h1>Домашняя бухгалтерия</h1>
+
+    <!-- ko if: router.activeInstruction().config.route !== "login" && router.activeInstruction().config.route !== "register" -->
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Операции</a></li>
+                <li><a href="#report">Отчеты</a></li>
+                <li><a href="#source">Счета</a></li>
+                <li><a href="#category">Категории</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: router.activeInstruction().config.route == "login" || router.activeInstruction().config.route == "register" -->
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#login">Авторизация</a></li>
+                <li><a href="#register">Регистрация</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /ko -->
+
+    <div data-bind="router: {}">
+
+
+    </div>
+</div>

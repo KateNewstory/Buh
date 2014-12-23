@@ -1,0 +1,19 @@
+.modal {
+    display: block;
+}
+
+.fr {
+    float: right;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.green {
+    color: #398439
+}
+
+.red {
+    color: #d9534f;
+}

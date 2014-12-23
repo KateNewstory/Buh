@@ -1,0 +1,19 @@
+<section class="container">
+
+    <h2>Счета</h2>
+
+    <div class="text-right">
+        <a href="#createSource" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp;Create</a>
+    </div>
+
+    <ul class="list-group">
+        <!-- ko foreach: sources -->
+        <li class="list-group-item">
+            <a href="#" data-bind="text: name, attr: { 'href': '#source/' + objectId }"></a>
+        </li>
+        <!-- /ko -->
+    </ul>
+
+
+
+</section>
